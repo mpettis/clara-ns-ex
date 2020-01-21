@@ -9,7 +9,7 @@
 ;;; Rules are in clara-ns-ex.rules ns
 ;;; Queries are in clara-ns-ex.queries
 (let [init-sess (mk-session 'clara-ns-ex.core)
-      rules-sess (insert init-sess get-rulefail)
+      rules-sess (insert init-sess rule-fail)
       fact-sess (apply insert rules-sess facts)]
   (-> fact-sess
       fire-rules
