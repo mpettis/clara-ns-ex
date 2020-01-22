@@ -5,9 +5,9 @@
 
 ;;; Fact records
 (def facts 
-  [(clara-ns-ex.facts/->Myfact 0)
-   (clara-ns-ex.facts/->Myfact 1)
-   (clara-ns-ex.facts/->Myfact 2)
-   (clara-ns-ex.facts/->Myfact 3)
-   (clara-ns-ex.facts/->Myfact 4)])
+  [(->Myfact 0)
+   (->Myfact 1)
+   (->Myfact 2)
+   (->Myfact 3)
+   (->Myfact 4)])
 
