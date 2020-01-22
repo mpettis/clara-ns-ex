@@ -13,8 +13,8 @@
 ;;; Rules are in clara-ns-ex.rules ns
 ;;; Queries are in clara-ns-ex.queries
 (let [init-sess (mk-session 'clara-ns-ex.core 'clara-ns-ex.rules 'clara-ns-ex.queries)
-      fact-sess (insert-all init-sess clara-ns-ex.facts/facts)]
+      fact-sess (insert-all init-sess facts)]
   (-> fact-sess
       fire-rules
-      (query clara-ns-ex.queries/get-rulefail)))
+      (query get-rulefail)))
 
