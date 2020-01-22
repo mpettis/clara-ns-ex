@@ -4,7 +4,7 @@
     [clara-ns-ex.facts]
     [clara.rules :refer :all])
   (:import 
-    [clara_ns_ex.facts Myfact]))
+    (clara_ns_ex.facts Myfact)))
 
 
 
