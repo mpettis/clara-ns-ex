@@ -14,5 +14,5 @@
   [Myfact (= ?theval theval)]
   [:test (> ?theval 2)]
   =>
-  (insert! (clara-ns-ex.rules/->Rulefail ?theval)))
+  (insert! (->Rulefail ?theval)))
 
