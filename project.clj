@@ -5,5 +5,7 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [com.cerner/clara-rules "0.20.0"]]
-  :repl-options {:init-ns clara-ns-ex.core})
+  ;:repl-options {:init-ns clara-ns-ex.core}
+  :main clara-ns-ex.core
+  )
 
