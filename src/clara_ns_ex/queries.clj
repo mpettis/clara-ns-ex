@@ -1,9 +1,12 @@
 (ns clara-ns-ex.queries
-  (:require [clara.rules :refer :all])
-  (:require [clara-ns-ex.rules :refer :all]))
+  (:require [clara.rules :refer :all]
+            [clara-ns-ex.rules]
+            )
+  (:import [clara_ns_ex.rules Rulefail]
+           ))
 
 (defquery get-rulefail
   "Get failed rules"
   []
-  [?rulefail <- Rulefail])
+  [?rulefail <- clara-ns-ex.rules/Rulefail])
 
