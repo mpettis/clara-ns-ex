@@ -1,12 +1,12 @@
 (ns clara-ns-ex.core
-  (:require [clara.rules :refer :all]
-            [clara-ns-ex.facts :refer :all]
-            [clara-ns-ex.rules :refer :all]
-            [clara-ns-ex.queries :refer :all]
-            )
-  (:import [clara_ns_ex.facts Myfact]
-           [clara_ns_ex.rules Rulefail]
-           ))
+  "Main ns to run the query from."
+  (:require 
+    [clara-ns-ex.queries :refer :all]
+    [clara-ns-ex.rules :refer :all]
+    [clara.rules :refer :all])
+  (:import 
+    [clara_ns_ex.facts Myfact]
+    [clara_ns_ex.rules Rulefail]))
 
 
 ;;; Facts are in clara-ns-ex.facts ns

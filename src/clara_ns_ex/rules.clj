@@ -1,9 +1,10 @@
 (ns clara-ns-ex.rules
-  (:require [clara.rules :refer :all]
-            [clara-ns-ex.facts]
-            )
-  (:import [clara_ns_ex.facts Myfact]
-           ))
+  "Define session rules, to be imported to core."
+  (:require 
+    [clara-ns-ex.facts]
+    [clara.rules :refer :all])
+  (:import 
+    [clara_ns_ex.facts Myfact]))
 
 
 
