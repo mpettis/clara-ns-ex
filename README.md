@@ -1,10 +1,17 @@
 # clara-ns-ex
 
-A Clojure library designed to ... well, that part is up to you.
+An example of using clara-rules and defining facts, rules, and queries in different namespaces.  Uses records that have definitions.
+
+Meant as a personal example of where I build up a personal set of clara-rules examples to get a feel for the package.  Referencing:
+
+- http://www.clara-rules.org/
+- https://github.com/cerner/clara-examples
+- https://github.com/mpettis/clara-lien
+
 
 ## Usage
 
-FIXME
+Download and run `clara-ns-ex.core`, it will run a simple query, but it will pull rules from one namespace, queries from another, and facts from yet a third namespace.
 
 ## License
 
