@@ -8,5 +8,5 @@
 (defquery get-rulefail
   "Get failed rules"
   []
-  [?rulefail <- clara-ns-ex.rules/Rulefail])
+  [?rulefail <- Rulefail])
 

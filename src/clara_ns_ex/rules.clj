@@ -6,11 +6,12 @@
            ))
 
 
+
 (defrecord Rulefail [theval])
 
 (defrule rule-fail
   "Rule that checks for failure."
-  [clara-ns-ex.facts/Myfact (= ?theval theval)]
+  [Myfact (= ?theval theval)]
   [:test (> ?theval 2)]
   =>
   (insert! (clara-ns-ex.rules/->Rulefail ?theval)))
